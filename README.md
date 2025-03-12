@@ -1,0 +1,1 @@
+Minecraft generates chunks when the player walks in them. On a server with lots of activity or if the server computer is less powerfull this can cause lag. By loading the chunks beforehand either on a more powerful computer or during a longer time the lag can be reduced. This datapack thus loads a configurable amount of chunks. 
