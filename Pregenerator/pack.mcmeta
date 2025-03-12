@@ -1,6 +1,10 @@
 {
   "pack": {
-    "pack_format": 61,
-    "description": "Minecraft chunk pregenerator datapack"
+    "description": "A Minecraft chunk pregenerator datapack by lprogrammer",
+    "pack_format": 4,
+    "supported_formats": [
+      4,
+      61
+    ]
   }
 }
