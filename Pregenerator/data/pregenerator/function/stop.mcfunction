@@ -1,0 +1,1 @@
+scoreboard players set Temp pregen_stage 0
