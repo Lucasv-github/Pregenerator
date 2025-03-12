@@ -1,6 +1,5 @@
-say next ring
+execute unless score pregen_settings pregen_debug matches 0 run say next ring
 
-execute if score Temp pregen_radius = Temp pregen_size run say done
 execute if score Temp pregen_radius = Temp pregen_size run function pregenerator:stop
 
 execute if score Temp pregen_stage matches 1..4 run scoreboard players add Temp pregen_radius 16

@@ -1,4 +1,4 @@
-say unloading
+execute unless score pregen_settings pregen_debug matches 0 run say unloading
 
 execute at @s run forceload remove ~ ~
 scoreboard players remove Loaded pregen_display 1

@@ -1,4 +1,4 @@
-tellraw @a ["",{"text":"Generating: X: "},{"score":{"name":"Temp","objective":"pregen_x"}},{"text":" Y: "},{"score":{"name":"Temp","objective":"pregen_y"}}]
+execute unless score pregen_settings pregen_debug matches 0 run tellraw @a ["",{"text":"Generating: X: "},{"score":{"name":"Temp","objective":"pregen_x"}},{"text":" Y: "},{"score":{"name":"Temp","objective":"pregen_y"}}]
 
 function pregenerator:summon_adjusted
 

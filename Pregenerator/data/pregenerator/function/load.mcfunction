@@ -15,6 +15,13 @@ scoreboard objectives add pregen_size dummy
 
 scoreboard objectives add pregen_stage dummy
 
+scoreboard objectives add pregen_step dummy
+scoreboard objectives add pregen_speed dummy
+scoreboard players set Temp pregen_speed 1
+
+scoreboard objectives add pregen_debug trigger
+execute unless score pregen_settings pregen_debug matches -2147483647.. run scoreboard players set pregen_settings pregen_debug 2000
+
 scoreboard objectives add pregen_display dummy "Pregenerator info"
 
 tellraw @a {"text":"Pregenerator 1.21.4-0 loaded","bold":true,"color":"gold"}
