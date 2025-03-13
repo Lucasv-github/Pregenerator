@@ -34,4 +34,27 @@ execute unless score pregen_settings pregen_debug matches -2147483647.. run scor
 
 scoreboard objectives add pregen_display dummy "Pregenerator info"
 
+team add pregenerator_green ""
+team modify pregenerator_green color green
+
+team add pregenerator_blue ""
+team modify pregenerator_blue color blue
+
+team add pregenerator_yellow ""
+team modify pregenerator_yellow color yellow
+
+team add pregenerator_red ""
+team modify pregenerator_red color red
+
+team join pregenerator_green Generate_total
+team join pregenerator_green Generated
+
+team join pregenerator_red Estimate_seconds
+team join pregenerator_red Elapsed_seconds
+
+team join pregenerator_yellow End_radius
+team join pregenerator_yellow Current_radius
+
+team join pregenerator_blue Loaded
+
 tellraw @a {"text":"Manhunt (1.14.4, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x)-4 Loaded","bold":true,"color":"gold"}
