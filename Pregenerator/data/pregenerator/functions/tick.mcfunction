@@ -9,7 +9,9 @@ execute if score Temp pregen_stage matches 1..4 run function pregenerator:step_l
 
 scoreboard players add Temp pregen_tick 1
 
-execute as @a[scores={pregen_start=1..}] run function pregenerator:start
+execute if score Temp pregen_stage matches 0 as @a[scores={pregen_start=1..}] run function pregenerator:start
+scoreboard players set @a pregen_start 0
+
 execute as @a[scores={pregen_stop=1..}] run function pregenerator:stop
 execute as @a[scores={pregen_size=1..}] run function pregenerator:size_changed
 
