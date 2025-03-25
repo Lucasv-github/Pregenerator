@@ -57,4 +57,4 @@ team join pregenerator_yellow Current_radius
 
 team join pregenerator_blue Loaded
 
-tellraw @a {"text":"Manhunt (1.14.4, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x)-4 Loaded","bold":true,"color":"gold"}
+tellraw @a {"text":"Pregenerator (1.14.4, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x)-3 Loaded","bold":true,"color":"gold"}
