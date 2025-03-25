@@ -31,6 +31,7 @@ scoreboard objectives add pregen_stop trigger
 
 scoreboard objectives add pregen_debug trigger
 execute unless score pregen_settings pregen_debug matches -2147483647.. run scoreboard players set pregen_settings pregen_debug 0
+execute unless score Temp pregen_stage matches -2147483647.. run scoreboard players set Temp pregen_stage 0
 
 scoreboard objectives add pregen_display dummy "Pregenerator info"
 
