@@ -1,4 +1,4 @@
-summon minecraft:armor_stand 0 100 0 {Tags:["pregen_marker_temp"]}
+summon minecraft:armor_stand 0 3000 0 {Tags:["pregen_marker_temp"]}
 
 scoreboard players operation Temp reg_1 = Temp pregen_x
 scoreboard players operation Temp reg_2 = Temp pregen_y

@@ -4,7 +4,8 @@ scoreboard players enable @a[tag=pregenerator_admin] pregen_stop
 scoreboard players enable @a[tag=pregenerator_admin] pregen_debug
 
 execute if score Temp pregen_stage matches 5 unless entity @e[type=armor_stand,tag=pregen_marker_wait_ground] run function pregenerator:done
-execute if score Temp pregen_stage matches 1..5 as @e[type=armor_stand,tag=pregen_marker_wait_ground,nbt={OnGround:1b}] run function pregenerator:unload
+execute if score Temp pregen_stage matches 1..5 as @e[type=armor_stand,tag=pregen_marker_wait_ground] store result score @s pregen_c_y run data get entity @s Pos[1]
+execute if score Temp pregen_stage matches 1..5 as @e[type=armor_stand,tag=pregen_marker_wait_ground] unless score @s pregen_s_y = @s pregen_c_y run function pregenerator:unload
 execute if score Temp pregen_stage matches 1..4 run function pregenerator:step_loop
 
 scoreboard players add Temp pregen_tick 1

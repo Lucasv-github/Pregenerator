@@ -1,6 +1,9 @@
 scoreboard objectives add pregen_x dummy
 scoreboard objectives add pregen_y dummy
 
+scoreboard objectives add pregen_s_y dummy
+scoreboard objectives add pregen_c_y dummy
+
 scoreboard objectives add reg_1 dummy
 scoreboard objectives add reg_2 dummy
 scoreboard objectives add reg_3 dummy
@@ -58,4 +61,4 @@ team join pregenerator_yellow Current_radius
 
 team join pregenerator_blue Loaded
 
-tellraw @a {"text":"Pregenerator (1.14.4, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x)-3 Loaded","bold":true,"color":"gold"}
+tellraw @a {"text":"Pregenerator (1.14.4, 1.15.x, 1.16.x, 1.17.x, 1.18.x, 1.19.x, 1.20.x, 1.21.x)-4 Loaded","bold":true,"color":"gold"}
