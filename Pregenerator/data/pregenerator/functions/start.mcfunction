@@ -1,3 +1,5 @@
+execute at @s run summon minecraft:armor_stand ~ ~ ~ {NoGravity:1b,Tags:[pregenerator_middle],Invulnerable:1b,Marker:1b}
+
 #Round to nearest chunk
 scoreboard players operation Temp pregen_size /= 16 reg_1
 scoreboard players operation Temp pregen_size *= 16 reg_1
@@ -22,7 +24,7 @@ scoreboard players set Estimate_seconds pregen_display 0
 scoreboard objectives setdisplay sidebar pregen_display
 
 #Here we spawn the armor stands originally
-forceload add 0 0
+execute at @s run forceload add 0 0
 
 tellraw @a {"text":"Chunk loading started, this might be laggy and might take a while","bold":true,"color":"gold"}
 
