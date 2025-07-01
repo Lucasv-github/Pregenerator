@@ -4,7 +4,7 @@
     "pack_format": 4,
     "supported_formats": [
       4,
-      80
+      81
     ]
   },
   "overlays": {
@@ -12,7 +12,7 @@
       {
         "directory": "1_21_5",
         "formats": {
-          "max_inclusive": 80,
+          "max_inclusive": 81,
           "min_inclusive": 71
         }
       }
