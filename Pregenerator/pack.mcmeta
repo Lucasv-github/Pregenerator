@@ -1,20 +1,24 @@
 {
   "pack": {
     "description": "A Minecraft chunk pregenerator datapack by lprogrammer",
-    "pack_format": 4,
+    "pack_format": 15,
     "supported_formats": [
-      4,
-      81
-    ]
+      15,
+      94.1
+    ],
+    "min_format": 15,
+    "max_format": 94.1
   },
   "overlays": {
     "entries": [
       {
         "directory": "1_21_5",
         "formats": {
-          "max_inclusive": 81,
+          "max_inclusive": 94.1,
           "min_inclusive": 71
-        }
+        },
+       "min_format": 71,
+        "max_format": 94.1
       }
     ]
   }
